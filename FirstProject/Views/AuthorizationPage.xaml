@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:p="clr-namespace:FirstProject;assembly=FirstProject"
+			 prism:ViewModelLocator.AutowireViewModel="True"
+			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+			 x:Class="FirstProject.AuthorizationPage"> 
+	
+	<StackLayout Spacing = "30" Padding = "0, 0, 0, 0" BackgroundColor = "#212c56" >
+		<Grid Padding = "15, 120, 15, 40" ColumnSpacing = "0" RowSpacing ="0" BackgroundColor = "#212c56">
+			<Grid.RowDefinitions>
+			 	<RowDefinition Height="*"/>
+			 	<RowDefinition Height="1"/>
+			 	<RowDefinition Height="*"/>
+			 	<RowDefinition Height="1"/>
+			</Grid.RowDefinitions>
+
+			<Grid.ColumnDefinitions>
+			 	<ColumnDefinition Width="4.5*" />
+			 	<ColumnDefinition Width="*" />			
+			</Grid.ColumnDefinitions>			 			
+			
+			<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="0" Grid.Column="0"  Placeholder="имя"/>
+			<BoxView BackgroundColor = "#424C72"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+			<ContentView Padding = "25, 0, 0, 4" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
+				<Image Source="Image1" Scale = "0.7"/>
+			</ContentView>
+
+			<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="2" Grid.Column="0"  Placeholder="пароль"/>
+			<BoxView BackgroundColor = "#424C72"  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+			<ContentView Padding = "25, 0, 0, 2" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
+				<Image Source="Image4" Scale = "0.7"/>
+			</ContentView>		
+		 </Grid>
+
+		 <StackLayout>
+		 <RelativeLayout>
+			 <Image Source="Image6" Scale = "0.7" 
+			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+	                                        		Property=Width,
+	                                        		Factor=0.30}"
+	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
+	                                        		Property=Height,
+	                                        		Factor= 0.075}" />
+
+			 <p:MyButtonWithPadding Text="Войти"			 	
+				 	FontSize="12"
+				 	FontAttributes = "Bold"
+				 	TextColor = "#0377c3"
+				 	BorderRadius = "30"
+				 	BorderColor	= "#0377c3"
+				 	BorderWidth = "2"
+				 	HorizontalOptions="Center"
+				 	VerticalOptions="Center" 
+				 	BackgroundColor="Transparent"
+				 	WidthRequest = "150"
+	           		HeightRequest = "40"
+	           		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+	                                        		Property=Width,
+	                                        		Factor=0.289}"
+				 	/>
+		</RelativeLayout>
+		</StackLayout>
+
+		<p:MyButton Text="Регистрация"			 	
+			 	FontSize="12"
+			 	FontAttributes = "Bold"
+			 	TextColor = "#0377c3"
+			 	Image = "Image5"
+			 	BorderRadius = "30"
+			 	BorderColor	= "#0377c3"
+			 	BorderWidth = "2"
+			 	HorizontalOptions="Center"
+			 	VerticalOptions="Center" 
+			 	BackgroundColor = "Transparent"
+			 	WidthRequest = "150"
+           		HeightRequest = "40"
+           		Command="{Binding NavigateCommand}"
+			 	/>
+
+	</StackLayout>  
+</ContentPage>
+
+

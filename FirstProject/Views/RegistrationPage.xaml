@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:p="clr-namespace:FirstProject;assembly=FirstProject"
+			 prism:ViewModelLocator.AutowireViewModel="True"
+			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+			 x:Class="FirstProject.RegistrationPage"> 
+	
+	<StackLayout Spacing = "0" Padding = "0, 0, 0, 0" BackgroundColor = "#212c56" >
+		<StackLayout BackgroundColor = "#0377c3">
+		<RelativeLayout>
+		 
+				 <Label Text="Регистрация"
+				 	BackgroundColor = "Transparent"
+				 	FontSize="13"
+				 	TextColor = "White" 
+				 	HorizontalOptions = "FillAndExpand"
+				 	VerticalOptions = "FillAndExpand"
+				 	HeightRequest = "40"
+				 	WidthRequest = "80"
+				 	XAlign = "Center"
+				 	YAlign = "Center"
+				 	RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+	                                        		Property=Width,
+	                                        		Factor=0.39}"
+				 	/>
+
+		 	 	<p:MyButton Text="Отмена"			 	
+				 	FontSize="12"
+				 	Command="{Binding NavigateCommand}"
+				 	HorizontalOptions="Center"
+				 	VerticalOptions="Center" 
+				 	BackgroundColor="Transparent"
+				 	WidthRequest = "80"
+	           		HeightRequest = "40"
+	           		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+	                                        		Property=Width,
+	                                        		Factor=0.78}"
+				 	/>
+		</RelativeLayout>
+
+		</StackLayout>
+			 <Grid Padding = "15, 95, 15, 60" ColumnSpacing = "0" RowSpacing ="0" BackgroundColor = "#212c56">
+				<Grid.RowDefinitions>
+				 	<RowDefinition Height="*"/>
+				 	<RowDefinition Height="1"/>
+				 	<RowDefinition Height="*"/>
+				 	<RowDefinition Height="1"/>
+				 	<RowDefinition Height="*"/>
+				 	<RowDefinition Height="1"/>
+				 	<RowDefinition Height="*"/>
+				 	<RowDefinition Height="1"/>
+
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+				 	<ColumnDefinition Width="4.5*" />
+				 	<ColumnDefinition Width="*" />			
+				</Grid.ColumnDefinitions>			 			
+				
+				<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="0" Grid.Column="0"  Placeholder="имя"/>
+				<BoxView BackgroundColor = "#424C72"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+				<ContentView Padding = "25, 0, 0, 4" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="Image1" Scale = "0.7"/>
+				</ContentView>
+
+				<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="2" Grid.Column="0"  Placeholder="e-mail"/>
+				<BoxView BackgroundColor = "#424C72"  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+				<ContentView Padding = "25, 0, 0, 5" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="Image2" Scale = "0.7"/>
+				</ContentView>
+
+				<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="4" Grid.Column="0"  Placeholder="номер телефона"/>
+				<BoxView BackgroundColor = "#424C72"  Grid.Row="5" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+				<ContentView Padding = "25, 0, 0, 1" Grid.Row="4" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="Image3" Scale = "0.7"/>
+				</ContentView>
+
+				<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="6" Grid.Column="0"  Placeholder="пароль"/>
+				<BoxView BackgroundColor = "#424C72"  Grid.Row="7" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
+				<ContentView Padding = "25, 0, 0, 2" Grid.Row="6" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="Image4" Scale = "0.7"/>
+				</ContentView>		
+			 </Grid>
+
+			 <p:MyButton Text="Зарегистрироваться"			 	
+				 	FontSize="12"
+				 	FontAttributes = "Bold"
+				 	TextColor = "#0377c3"
+				 	Image = "Image5"
+				 	BorderRadius = "30"
+				 	BorderColor	= "#0377c3"
+				 	BorderWidth = "2"
+				 	HorizontalOptions="Center"
+				 	VerticalOptions="Center" 
+				 	BackgroundColor="Transparent"
+				 	WidthRequest = "180"
+	           		HeightRequest = "40"
+				 	/>
+
+	</StackLayout>  
+</ContentPage>
+
+

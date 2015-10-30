@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Droid\FirstProject.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FirstProject\Controls\MyButtonWithPadding.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstProject\Views\RegistrationPage.xaml">
     <Files>
-      <File FileName="FirstProject\Controls\MyButtonWithPadding.cs" Line="1" Column="1" />
+      <File FileName="FirstProject\Views\RegistrationPage.xaml" Line="71" Column="36" />
+      <File FileName="FirstProject\Views\RegistrationPage.xaml.cs" Line="14" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

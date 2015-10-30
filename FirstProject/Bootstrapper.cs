@@ -11,6 +11,7 @@ namespace FirstProject
 		protected override Xamarin.Forms.Page CreateMainPage ()
 		{
 			return Container.Resolve<AuthorizationPage> ();
+			//return Container.Resolve<RegistrationPage> ();
 		}
 
 		protected override void RegisterTypes ()

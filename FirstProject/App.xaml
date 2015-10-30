@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			x:Class="FirstProject.App">
+
+	<Application.Resources>
+        <ResourceDictionary>
+            <!-- Style for Stack -->
+            <Style x:Key="MainStackStyle" TargetType="StackLayout">                
+                <Setter Property="BackgroundColor" Value="#212c56" />
+                <Setter Property="Padding" Value="0, 0, 0, 0" />                                           
+            </Style>
+            <Style x:Key="ActionBarStackStyle" TargetType="StackLayout">                
+                <Setter Property="BackgroundColor" Value="#0377c3"/>                                                           
+            </Style>
+
+            <!-- Style for Label -->
+            <Style x:Key="ActionBarLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="helvetica neue" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="BackgroundColor" Value="Transparent" />                                             
+            </Style>
+
+            <!-- Style for Button -->
+            <Style x:Key="ActionBarButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="helvetica neue" />
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="BackgroundColor" Value="Transparent" />   
+                <Setter Property="VerticalOptions" Value="FillAndExpand" />                                     
+            </Style>
+            <Style x:Key="EnterButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#0377c3" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="helvetica neue" />
+                <Setter Property="BackgroundColor" Value="Transparent" />   
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BorderRadius" Value="30" /> 
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="BorderColor" Value="#0377c3"/>                                                                                                                                                                                                                                                
+            </Style>
+            <Style x:Key="RegistrationButtonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#0377c3" />
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontFamily" Value="helvetica neue" />
+                <Setter Property="BackgroundColor" Value="Transparent" />   
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="BorderRadius" Value="30" /> 
+                <Setter Property="BorderWidth" Value="2" />
+                <Setter Property="BorderColor" Value="#0377c3"/>
+                <Setter Property="Image" Value="registraion_icon" />                                                                                                                                                                                                                                 
+            </Style>
+
+             <!-- Style for BoxView -->
+             <Style x:Key="BoxViewStyle" TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="1" />
+                <Setter Property="BackgroundColor" Value="#424C72" />                                         
+            </Style>
+
+            <!-- Style for ContentView -->
+             <Style x:Key="ContentViewStyle" TargetType="ContentView">
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="Padding" Value="20, 0, 0, 7" />                                        
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>	
+
+				 	
+

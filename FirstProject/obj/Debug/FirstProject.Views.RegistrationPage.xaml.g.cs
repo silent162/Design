@@ -17,8 +17,12 @@ namespace FirstProject {
     public partial class RegistrationPage : global::Xamarin.Forms.ContentPage {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label Dop;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(RegistrationPage));
+            Dop = this.FindByName<global::Xamarin.Forms.Label>("Dop");
         }
     }
 }

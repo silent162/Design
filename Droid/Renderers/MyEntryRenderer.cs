@@ -6,30 +6,28 @@ using FirstProject.Droid;
 using Android.Runtime;
 using System.ComponentModel;
 
-[assembly: ExportRenderer (typeof(MyEntry), typeof(MyEntryRenderer))]
+[assembly: ExportRenderer (typeof(ExtendedEntry), typeof(ExtendedEntryRenderer))]
 namespace FirstProject.Droid
 {
-	public class MyEntryRenderer : EntryRenderer
+	public class ExtendedEntryRenderer : EntryRenderer
 	{
 		protected override void OnElementChanged (ElementChangedEventArgs<Entry> e)
 		{
 			base.OnElementChanged (e);
 			UpdateText ();
-
 		}
 
 		protected override void OnElementPropertyChanged (object sender, PropertyChangedEventArgs e)
 		{
 			base.OnElementPropertyChanged (sender, e);		
 			UpdateText ();
-
 		}
 
 		#region private helpers
 
-		private MyEntry MyElement {
+		private ExtendedEntry MyElement {
 			get {
-				return Element as MyEntry;
+				return Element as ExtendedEntry;
 			} 
 		}
 
@@ -39,7 +37,8 @@ namespace FirstProject.Droid
 				return;
 
 			Control.SetBackgroundColor (Android.Graphics.Color.Transparent);
-
+			//Control.TextSize = 13;
+			//Control.SetPaddingRelative (10, 0, 0, -30);
 		}
 
 

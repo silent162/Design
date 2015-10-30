@@ -1,3 +1,6 @@
+C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.Views.AuthorizationPage.xaml.g.cs
+C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.Views.RegistrationPage.xaml.g.cs
+C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.App.xaml.g.cs
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\FirstProject.dll
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\FirstProject.pdb
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\Microsoft.Practices.ServiceLocation.dll
@@ -16,8 +19,6 @@ C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\Microsof
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\Prism.Forms.xml
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\bin\Debug\Prism.Unity.Forms.xml
-C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.csprojResolveAssemblyReference.cache
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.dll
 C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.pdb
-C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.Views.AuthorizationPage.xaml.g.cs
-C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.Views.RegistrationPage.xaml.g.cs
+C:\Users\Worker5\Documents\Projects\FirstProject\FirstProject\obj\Debug\FirstProject.csprojResolveAssemblyReference.cache

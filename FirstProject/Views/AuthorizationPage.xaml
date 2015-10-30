@@ -6,8 +6,8 @@
 			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
 			 x:Class="FirstProject.AuthorizationPage"> 
 	
-	<StackLayout Spacing = "30" Padding = "0, 0, 0, 0" BackgroundColor = "#212c56" >
-		<Grid Padding = "15, 120, 15, 40" ColumnSpacing = "0" RowSpacing ="0" BackgroundColor = "#212c56">
+	<StackLayout Spacing = "30" Style = "{StaticResource MainStackStyle}" >
+		<Grid Padding = "15, 120, 15, 40" ColumnSpacing = "0" RowSpacing ="6.3">
 			<Grid.RowDefinitions>
 			 	<RowDefinition Height="*"/>
 			 	<RowDefinition Height="1"/>
@@ -20,39 +20,31 @@
 			 	<ColumnDefinition Width="*" />			
 			</Grid.ColumnDefinitions>			 			
 			
-			<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="0" Grid.Column="0"  Placeholder="имя"/>
-			<BoxView BackgroundColor = "#424C72"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
-			<ContentView Padding = "25, 0, 0, 4" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
-				<Image Source="Image1" Scale = "0.7"/>
-			</ContentView>
+				<p:ExtendedEntry Grid.Row="0" Grid.Column="0"  Placeholder="имя" />
+				<BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}" />
+				<ContentView Padding = "20, 0, 0, 2" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="ico_user" WidthRequest = "24.3" HeightRequest = "34.6"/>
+				</ContentView>
 
-			<p:MyEntry BackgroundColor = "#212c56"  Grid.Row="2" Grid.Column="0"  Placeholder="пароль"/>
-			<BoxView BackgroundColor = "#424C72"  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" HeightRequest = "1" WidthRequest = "1"/>
-			<ContentView Padding = "25, 0, 0, 2" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
-				<Image Source="Image4" Scale = "0.7"/>
-			</ContentView>		
+				<p:ExtendedEntry Grid.Row="2" Grid.Column="0"  Placeholder="пароль" IsPassword="true"/>
+				<BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}"/>
+				<ContentView Padding = "25, 0, 0, 2" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
+					<Image Source="ico_lock" WidthRequest = "27" HeightRequest = "36"/>
+				</ContentView>		
 		 </Grid>
 
 		 <StackLayout>
 		 <RelativeLayout>
-			 <Image Source="Image6" Scale = "0.7" 
+			 <Image Source="login_arrow" Scale = "0.7" 
 			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
 	                                        		Property=Width,
-	                                        		Factor=0.30}"
+	                                        		Factor=0.52}"
 	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
 	                                        		Property=Height,
-	                                        		Factor= 0.075}" />
+	                                        		Factor= 0.265}" />
 
-			 <p:MyButtonWithPadding Text="Войти"			 	
-				 	FontSize="12"
-				 	FontAttributes = "Bold"
-				 	TextColor = "#0377c3"
-				 	BorderRadius = "30"
-				 	BorderColor	= "#0377c3"
-				 	BorderWidth = "2"
-				 	HorizontalOptions="Center"
-				 	VerticalOptions="Center" 
-				 	BackgroundColor="Transparent"
+			 <p:ExtendedButtonWithPadding Text="Войти"			 	
+				 	Style = "{StaticResource EnterButtonStyle}"
 				 	WidthRequest = "150"
 	           		HeightRequest = "40"
 	           		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
@@ -62,22 +54,12 @@
 		</RelativeLayout>
 		</StackLayout>
 
-		<p:MyButton Text="Регистрация"			 	
-			 	FontSize="12"
-			 	FontAttributes = "Bold"
-			 	TextColor = "#0377c3"
-			 	Image = "Image5"
-			 	BorderRadius = "30"
-			 	BorderColor	= "#0377c3"
-			 	BorderWidth = "2"
-			 	HorizontalOptions="Center"
-			 	VerticalOptions="Center" 
-			 	BackgroundColor = "Transparent"
+		<p:ExtendedButton Text="Регистрация"			 	
+			 	Style = "{StaticResource RegistrationButtonStyle}"
 			 	WidthRequest = "150"
            		HeightRequest = "40"
            		Command="{Binding NavigateCommand}"
 			 	/>
-
 	</StackLayout>  
 </ContentPage>
 

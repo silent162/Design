@@ -37,6 +37,8 @@ namespace FirstProject.Droid
 				return;
 
 			Control.SetAllCaps (false);
+			//Control.SetPadding (100, 0, 100, 0);
+			Control.SetPaddingRelative (60, 0, 100, 0);
 		}
 
 

@@ -8,7 +8,7 @@
             <!-- Style for Stack -->
             <Style x:Key="MainStackStyle" TargetType="StackLayout">                
                 <Setter Property="BackgroundColor" Value="#212c56" />
-                <Setter Property="Padding" Value="0, 0, 0, 0" />                                           
+                <Setter Property="Padding" Value="0,0,0,0" />                                           
             </Style>
             <Style x:Key="ActionBarStackStyle" TargetType="StackLayout">                
                 <Setter Property="BackgroundColor" Value="#0377c3"/>                                                           
@@ -21,8 +21,44 @@
                 <Setter Property="FontSize" Value="13" />
                 <Setter Property="BackgroundColor" Value="Transparent" />                                             
             </Style>
+            <Style x:Key="ListVieweLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="helvetica neue" />
+                <Setter Property="FontSize" Value="14" />               
+                <Setter Property="VerticalOptions" Value="CenterAndExpand" />                                             
+            </Style>
+            <!-- Style for Button -->			      
 
-            <!-- Style for Button -->
+			<Style x:Key="OptionsButtonStyle" TargetType="Button">
+				<Setter Property="BorderRadius" Value="0" />
+				<Setter Property="TextColor" Value="#0377c3" />                
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BackgroundColor" Value="#212c56" />                                                                              
+            </Style>
+			<Style x:Key="AddDeviceButtonStyle" TargetType="Button">
+				<Setter Property="TextColor" Value="#0377c3" />            	
+                <Setter Property="BorderRadius" Value="100" />
+                <Setter Property="BorderColor" Value="#0377c3" />
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BackgroundColor" Value="#2C365E" />
+                <Setter Property="Image" Value="plus_icon"/> 
+                <Setter Property="HeightRequest" Value="40" />                                                                
+            </Style>         
+			<Style x:Key="СircleBackgroundButtonStyle" TargetType="Button">            	
+                <Setter Property="BorderRadius" Value="100" />
+                <Setter Property="BorderColor" Value="#1B254B" />
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BackgroundColor" Value="#212c56" />
+                <Setter Property="Image" Value="menu_filter_arrow"/>                                                                 
+            </Style>
+            <Style x:Key="BackgroundButtonStyle" TargetType="Button">            	
+                <Setter Property="BorderRadius" Value="100" />
+                <Setter Property="BorderColor" Value="#1B254B" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="HeightRequest" Value="40" />
+                <Setter Property="BackgroundColor" Value="#2C365E" />                                                  
+            </Style>
             <Style x:Key="ActionBarButtonStyle" TargetType="Button">
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontFamily" Value="helvetica neue" />
@@ -34,7 +70,7 @@
                 <Setter Property="TextColor" Value="#0377c3" />
                 <Setter Property="FontSize" Value="12" />
                 <Setter Property="FontFamily" Value="helvetica neue" />
-                <Setter Property="BackgroundColor" Value="Transparent" />   
+                <Setter Property="BackgroundColor" Value="#212c56" />   
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="BorderRadius" Value="30" /> 
@@ -45,25 +81,19 @@
                 <Setter Property="TextColor" Value="#0377c3" />
                 <Setter Property="FontSize" Value="12" />
                 <Setter Property="FontFamily" Value="helvetica neue" />
-                <Setter Property="BackgroundColor" Value="Transparent" />   
+                <Setter Property="BackgroundColor" Value="#212c56" />   
                 <Setter Property="HorizontalOptions" Value="Center" />
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="BorderRadius" Value="30" /> 
                 <Setter Property="BorderWidth" Value="2" />
                 <Setter Property="BorderColor" Value="#0377c3"/>
-                <Setter Property="Image" Value="registraion_icon" />                                                                                                                                                                                                                                 
+                <Setter Property="Image" Value="registraion_icon" />                                                                                                                                                                                                                                             
             </Style>
 
              <!-- Style for BoxView -->
              <Style x:Key="BoxViewStyle" TargetType="BoxView">
                 <Setter Property="HeightRequest" Value="1" />
                 <Setter Property="BackgroundColor" Value="#424C72" />                                         
-            </Style>
-
-            <!-- Style for ContentView -->
-             <Style x:Key="ContentViewStyle" TargetType="ContentView">
-                <Setter Property="VerticalOptions" Value="End" />
-                <Setter Property="Padding" Value="20, 0, 0, 7" />                                        
             </Style>
         </ResourceDictionary>
     </Application.Resources>

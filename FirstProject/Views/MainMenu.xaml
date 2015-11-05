@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="FirstProject.Views.MainMenu"
+			 xmlns:p="clr-namespace:FirstProject;assembly=FirstProject"
+			 xmlns:px="clr-namespace:FirstProject.ViewModels;assembly=FirstProject.ViewModels"
+			 prism:ViewModelLocator.AutowireViewModel="True"
+			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+			 Title="My Title">
+
+		<StackLayout Spacing = "0" Style = "{StaticResource MainStackStyle}">	
+		<StackLayout Orientation = "Horizontal"  Padding ="0,5,0,1">
+			<ContentView Padding = "15,10,10,10">
+				<Image Source="menu__filter_ico" WidthRequest = "26.88" HeightRequest = "22.88"/>
+			</ContentView>
+
+			<Grid Padding = "0" ColumnSpacing = "0" RowSpacing ="0"  >
+				<Grid.RowDefinitions>
+				 	<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+
+				<Grid.ColumnDefinitions>
+				 	<ColumnDefinition Width="5*" />
+				 	<ColumnDefinition Width="*" />			
+				</Grid.ColumnDefinitions>	
+
+			<RelativeLayout Grid.Row="0" Grid.Column="0">
+			    <p:ExtendedButton x:Name = "pickerBackground" Text = "" 
+			    	Style = "{StaticResource BackgroundButtonStyle}"			   
+				    RelativeLayout.WidthConstraint = 
+	                        	"{ConstraintExpression Type=RelativeToParent,
+		                                                Property=Width,
+		                                                Factor=1}"                
+				     />
+				<p:ExtendedButtonCircleBackGr Text = "" 
+					Style = "{StaticResource СircleBackgroundButtonStyle}"
+					RelativeLayout.WidthConstraint = 
+		                        "{ConstraintExpression Type=RelativeToView,
+				                                        Property=Height, 
+				                                        ElementName=pickerBackground,
+				                                        Constant=-9}" 
+		            RelativeLayout.HeightConstraint = 
+                        		"{ConstraintExpression Type=RelativeToView,
+				                                        Property=Height, 
+				                                        ElementName=pickerBackground,
+				                                        Constant=-9}" 
+				    RelativeLayout.XConstraint = 
+		                        "{ConstraintExpression Type=RelativeToView,
+				                                        Property=Width, 
+				                                        ElementName=pickerBackground,
+				                                        Constant=-35}" 
+				    RelativeLayout.YConstraint = 
+		                        "{ConstraintExpression Type=RelativeToView,
+				                                        Property=Height, 
+				                                        ElementName=pickerBackground,
+				                                        Constant=-35}"/>
+
+			    <p:ExtendedPicker Title = "все"  
+			     	RelativeLayout.WidthConstraint = 
+                        		"{ConstraintExpression Type=RelativeToParent,
+		                                                Property=Width,
+		                                                Factor=1}"
+           			RelativeLayout.HeightConstraint = 
+                        		"{ConstraintExpression Type=RelativeToParent,
+                                              			Property=Height,
+                                               			Factor=1}">
+					<Picker.Items>
+				        <x:String>C#</x:String>
+				        <x:String>C/C++</x:String>
+				        <x:String>Java</x:String>
+				        <x:String>все</x:String>
+				     </Picker.Items>
+				</p:ExtendedPicker>
+			</RelativeLayout>
+
+			<BoxView Grid.Row="0" Grid.Column="1" BackgroundColor = "Transparent" />
+		    </Grid>
+
+		</StackLayout>
+			<ContentView HeightRequest = "1" Padding = "15,0,0,0">
+				<BoxView  BackgroundColor = "#1D274D"  />
+			</ContentView>
+
+		<StackLayout Spacing = "0" Padding = "0,0,0,0">
+	      <p:ExtendedListView ItemsSource="{x:Static p:MainMenuViewModel.Markers}" SeparatorVisibility = "None" x:Name = "rt">
+		    <ListView.ItemTemplate>
+		      <DataTemplate>
+		        <ViewCell>
+		          <ViewCell.View>
+		              <StackLayout Orientation = "Horizontal">	
+		              	<ContentView Padding = "22,0,15,0">
+							<Image Source="{Binding Image}" WidthRequest = "22.88" HeightRequest = "18.88"/>
+						</ContentView>
+		              <StackLayout HorizontalOptions = "FillAndExpand" VerticalOptions = "Fill">	                
+				            <Label Text="{Binding Name}" Style = "{StaticResource ListVieweLabelStyle}"/>
+				            <BoxView  BackgroundColor = "#1D274D" HeightRequest = "1" VerticalOptions="End" HorizontalOptions="Fill"/>
+		              </StackLayout>
+		            </StackLayout>
+		          </ViewCell.View>
+		        </ViewCell>
+		      </DataTemplate>
+		    </ListView.ItemTemplate>
+ 		 </p:ExtendedListView>
+
+        <BoxView HeightRequest ="1" BackgroundColor ="#1B254B"/>
+
+        <StackLayout BackgroundColor = "#2C365E" Padding = "40,20,40,20" Spacing = "0">
+        	<p:ExtendedButtonAddDevice Text = "Добавить устройство" 
+        	         Style = "{StaticResource AddDeviceButtonStyle}"/>
+
+        </StackLayout>
+        	<BoxView HeightRequest ="1" BackgroundColor ="#1B254B"/>
+        </StackLayout>
+
+        <RelativeLayout>
+        <p:ExtendedButtonMainMenu x:Name = "optionsButton" Text = "Настройки" 		    
+				   	 Style = "{StaticResource OptionsButtonStyle}"
+				     RelativeLayout.WidthConstraint = 
+	                        	 "{ConstraintExpression Type=RelativeToParent,
+			                                             Property=Width,
+			                                             Factor=1}"/>
+
+		<Image Source="menu_settings_arrow" Scale = "0.5" 
+			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+						                                        		Property=Width,
+						                                        		Factor=0.9}"
+	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, 
+						                                        		Property=Height,
+						                                        		ElementName=optionsButton,
+						                                        		Factor= 0.20}" />
+		</RelativeLayout>
+
+		<ContentView HeightRequest = "1" Padding = "15,0,0,0">
+			<BoxView  BackgroundColor = "#1D274D"/>
+		</ContentView>
+
+		<RelativeLayout>
+        <p:ExtendedButtonMainMenu x:Name = "helpButton" Text = "Помощь" 			    
+				     Style = "{StaticResource OptionsButtonStyle}"
+				     RelativeLayout.WidthConstraint = "{ConstraintExpression Type=RelativeToParent,
+								                                               Property=Width,
+								                                               Factor=1}"/>
+
+		<Image Source="menu_settings_arrow" Scale = "0.5" 
+			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
+						                                        		Property=Width,
+						                                        		Factor=0.9}"
+	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, 
+						                                        		Property=Height,
+						                                        		ElementName=helpButton,
+						                                        		Factor= 0.20}" />
+		</RelativeLayout>
+	</StackLayout>
+</ContentPage>

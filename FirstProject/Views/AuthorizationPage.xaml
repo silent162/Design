@@ -6,8 +6,8 @@
 			 xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
 			 x:Class="FirstProject.AuthorizationPage"> 
 	
-	<StackLayout Spacing = "30" Style = "{StaticResource MainStackStyle}" >
-		<Grid Padding = "15, 120, 15, 40" ColumnSpacing = "0" RowSpacing ="6.3">
+	<StackLayout  Style = "{StaticResource MainStackStyle}" >
+		<Grid Padding = "15, 120, 15, 40" ColumnSpacing = "0" RowSpacing ="0">
 			<Grid.RowDefinitions>
 			 	<RowDefinition Height="*"/>
 			 	<RowDefinition Height="1"/>
@@ -22,44 +22,45 @@
 			
 				<p:ExtendedEntry Grid.Row="0" Grid.Column="0"  Placeholder="имя" />
 				<BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}" />
-				<ContentView Padding = "20, 0, 0, 2" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
-					<Image Source="ico_user" WidthRequest = "24.3" HeightRequest = "34.6"/>
+				<ContentView Padding = "0, 0, 0, 0" Grid.Row="0" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					<Image Source="ico_user" WidthRequest = "20" HeightRequest = "30"/>
 				</ContentView>
 
 				<p:ExtendedEntry Grid.Row="2" Grid.Column="0"  Placeholder="пароль" IsPassword="true"/>
 				<BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}"/>
-				<ContentView Padding = "25, 0, 0, 2" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
-					<Image Source="ico_lock" WidthRequest = "27" HeightRequest = "36"/>
+				<ContentView Padding = "0, 0, 0, 0" Grid.Row="2" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					<Image Source="email_icon" VerticalOptions = "End"/>
 				</ContentView>		
 		 </Grid>
 
-		 <StackLayout>
-		 <RelativeLayout>
-			 <Image Source="login_arrow" Scale = "0.7" 
-			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
-	                                        		Property=Width,
-	                                        		Factor=0.52}"
-	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, 
-	                                        		Property=Height,
-	                                        		Factor= 0.265}" />
-
-			 <p:ExtendedButtonWithPadding Text="Войти"			 	
+		 <StackLayout Spacing = "30" HorizontalOptions = "Center" Padding = "0,0,0,0">
+		 <RelativeLayout>	                
+			<p:ExtendedButtonWithPadding Text="Войти" x:Name = "enterButton"			 	
 				 	Style = "{StaticResource EnterButtonStyle}"
-				 	WidthRequest = "150"
 	           		HeightRequest = "40"
-	           		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
-	                                        		Property=Width,
-	                                        		Factor=0.289}"
+		           	BindingContext="{x:Reference registrationButton}"
+					WidthRequest="{Binding Path=Width}"	        	                                        	
 				 	/>
-		</RelativeLayout>
-		</StackLayout>
 
-		<p:ExtendedButton Text="Регистрация"			 	
+				 	<Image Source="login_arrow" Scale = "0.7" 
+			 		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, 
+	                                        		Property=Width,
+	                                        		ElementName=enterButton,
+	                                        		Factor=0.6}"
+	                RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, 
+	                                        		Property=Height,
+	                                        		ElementName=enterButton,
+	                                        		Factor= 0.265}" 
+	                />	
+		</RelativeLayout>
+
+			<p:ExtendedButton Text="Регистрация" x:Name = "registrationButton"		 	
 			 	Style = "{StaticResource RegistrationButtonStyle}"
-			 	WidthRequest = "150"
            		HeightRequest = "40"
-           		Command="{Binding NavigateCommand}"
+           		Command="{Binding NavigateCommand}"				   
 			 	/>
+		
+		</StackLayout>
 	</StackLayout>  
 </ContentPage>
 

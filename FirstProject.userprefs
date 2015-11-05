@@ -1,13 +1,25 @@
 ﻿<Properties StartupItem="Droid\FirstProject.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FirstProject\Views\RegistrationPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstProject\Bootstrapper.cs">
     <Files>
-      <File FileName="FirstProject\Views\RegistrationPage.xaml" Line="71" Column="36" />
-      <File FileName="FirstProject\Views\RegistrationPage.xaml.cs" Line="14" Column="4" />
+      <File FileName="FirstProject\App.xaml" Line="32" Column="25" />
+      <File FileName="FirstProject\Views\MainMenu.xaml" Line="117" Column="42" />
+      <File FileName="Droid\Renderers\ExtendedButtonMainMenuRenderer.cs" Line="39" Column="4" />
+      <File FileName="Droid\Renderers\ExtendedButtonAddDeviceRenderer.cs" Line="53" Column="1" />
+      <File FileName="FirstProject\Views\MainMenu.xaml.cs" Line="14" Column="4" />
+      <File FileName="FirstProject\Bootstrapper.cs" Line="15" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Worker5\Desktop\FirstPR\Design\Droid\Renderers\ExtendedViewCellRenderer.cs" line="28" column="1" />
+      <Breakpoint file="C:\Users\Worker5\Desktop\FirstPR\Design\Droid\Renderers\ExtendedViewCellRenderer.cs" line="21" column="1" />
+      <Breakpoint file="C:\Users\Worker5\Desktop\FirstPR\Design\Droid\Renderers\ExtendedListViewRenderer.cs" line="73" column="1" />
+      <Breakpoint file="C:\Users\Worker5\Desktop\FirstPR\Design\Droid\Renderers\ExtendedListViewRenderer.cs" line="68" column="4" />
+      <Breakpoint file="C:\Users\Worker5\Desktop\FirstPR\Design\Droid\Renderers\ExtendedListViewRenderer.cs" line="63" column="25" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Droid\Renderers\ExtendedListViewRenderer.cs" line="49" offsetX="508" offsetY="768" expression="i" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

@@ -35,8 +35,6 @@
     <Compile Include="Views\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewsModels\AuthorizationPageViewModel.cs" />
-    <Compile Include="ViewsModels\RegistrationPageViewModel.cs" />
     <Compile Include="Views\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
     </Compile>
@@ -46,6 +44,26 @@
     <Compile Include="Controls\ExtendedButton.cs" />
     <Compile Include="Controls\ExtendedButtonWithPadding.cs" />
     <Compile Include="Controls\ExtendedEntry.cs" />
+    <Compile Include="Views\RootPage.xaml.cs">
+      <DependentUpon>RootPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExtendedPicker.cs" />
+    <Compile Include="Controls\ExtendedBoxView.cs" />
+    <Compile Include="Controls\ExtendedFrame.cs" />
+    <Compile Include="ViewModels\AuthorizationPageViewModel.cs" />
+    <Compile Include="ViewModels\RegistrationPageViewModel.cs" />
+    <Compile Include="ViewModels\MainMenuViewModel.cs" />
+    <Compile Include="Controls\ExtendedListView.cs" />
+    <Compile Include="Controls\ExtendedViewCell.cs" />
+    <Compile Include="Controls\ExtendedButtonMainMenu.cs" />
+    <Compile Include="Controls\ExtendedButtonAddDevice.cs" />
+    <Compile Include="Controls\ExtendedButtonCircleBackGr.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -81,8 +99,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
-    <Folder Include="ViewsModels\" />
     <Folder Include="Controls\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\AuthorizationPage.xaml">
@@ -92,6 +110,15 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="App.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RootPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainMenu.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HomePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

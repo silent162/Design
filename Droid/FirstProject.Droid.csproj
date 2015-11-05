@@ -92,9 +92,17 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renderers\MyEntryRenderer.cs" />
     <Compile Include="Renderers\ExtendedButtonRenderer.cs" />
     <Compile Include="Renderers\ExtendedButtonWithPaddingRenderer.cs" />
+    <Compile Include="Renderers\ExtendedEntryRenderer.cs" />
+    <Compile Include="Renderers\ExtendedPickerRenderer.cs" />
+    <Compile Include="Renderers\ExtendedBoxViewRenderer.cs" />
+    <Compile Include="Renderers\ExtendedFrameRenderer.cs" />
+    <Compile Include="Renderers\ExtendedListViewRenderer.cs" />
+    <Compile Include="Renderers\ExtendedViewCellRenderer.cs" />
+    <Compile Include="Renderers\ExtendedButtonMainMenuRenderer.cs" />
+    <Compile Include="Renderers\ExtendedButtonAddDeviceRenderer.cs" />
+    <Compile Include="Renderers\ExtendedButtonCircleBackGrRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -118,6 +126,11 @@
     <AndroidResource Include="Resources\drawable\ico_lock.png" />
     <AndroidResource Include="Resources\drawable\ico_user.png" />
     <AndroidResource Include="Resources\drawable\login_arrow.png" />
+    <AndroidResource Include="Resources\drawable\menu__filter_ico.png" />
+    <AndroidResource Include="Resources\drawable\menu_filter_arrow.png" />
+    <AndroidResource Include="Resources\drawable\menu_settings_arrow.png" />
+    <AndroidResource Include="Resources\drawable\plus_icon.png" />
+    <AndroidResource Include="Resources\drawable\menu_system_icon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

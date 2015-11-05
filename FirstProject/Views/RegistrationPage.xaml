@@ -22,7 +22,7 @@
 
 		 	 	<p:ExtendedButton Text="Отмена"
 		 	 		Style = "{StaticResource ActionBarButtonStyle}"				 	
-				 	Command="{Binding NavigateCommand}"				 	 
+				 	Command="{Binding NavigateCommand}"	 	 
 	           		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, 
 	                                        		Property=Width,
 	                                        		Factor=0.76}"
@@ -30,7 +30,7 @@
 		</RelativeLayout>
 		</StackLayout>
 
-			 <Grid Padding = "15, 95, 15, 60" ColumnSpacing = "0" RowSpacing ="0">
+			 <Grid Padding = "15, 85, 15, 60" ColumnSpacing = "0" RowSpacing ="0">
 				<Grid.RowDefinitions>
 				 	<RowDefinition Height="*"/>
 				 	<RowDefinition Height="1"/>
@@ -49,32 +49,31 @@
 				
 				<p:ExtendedEntry Grid.Row="0" Grid.Column="0"  Placeholder="имя" />
 				<BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}" />
-				<ContentView Padding = "20, 0, 0, 7" Grid.Row="0" Grid.Column="1" VerticalOptions = "End">
-					<Image Source="ico_user" WidthRequest = "24.3" HeightRequest = "34.6"/>
+				<ContentView Padding = "0, 0, 0, 0" Grid.Row="0" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					<Image Source="ico_user" WidthRequest = "20" HeightRequest = "30"/>
 				</ContentView>
 
 				<p:ExtendedEntry Grid.Row="2" Grid.Column="0"  Placeholder="e-mail"/>
 				<BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}"/>
-				<ContentView Padding = "25, 0, 0, 7" Grid.Row="2" Grid.Column="1" VerticalOptions = "End">
-					<Image Source="email_icon"/>
+				<ContentView Padding = "0, 0, 0, 0"  Grid.Row="2" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					<Image Source="email_icon" VerticalOptions = "End"/>
 				</ContentView>
 
 				<p:ExtendedEntry Grid.Row="4" Grid.Column="0"  Placeholder="номер телефона"/>
 				<BoxView Grid.Row="5" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}"/>
-				<ContentView Padding = "25, 0, 0, 7" Grid.Row="4" Grid.Column="1" VerticalOptions = "End">
-					<Image Source="phone_icon"/>
+				<ContentView Padding = "25, 0, 0, 0" Grid.Row="4" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					
 				</ContentView>
 
 				<p:ExtendedEntry Grid.Row="6" Grid.Column="0"  Placeholder="пароль" IsPassword="true"/>
 				<BoxView Grid.Row="7" Grid.Column="0" Grid.ColumnSpan  = "2" Style = "{StaticResource BoxViewStyle}"/>
-				<ContentView  Grid.Row="6" Grid.Column="1" Style = "{StaticResource ContentViewStyle}">
-					<Image Source="ico_lock" WidthRequest = "27" HeightRequest = "36"/>
+				<ContentView Padding = "0, 0, 0, 0" Grid.Row="6" Grid.Column="1" VerticalOptions = "Fill" BackgroundColor = "Black">
+					
 				</ContentView>		
 			 </Grid>
 
 			 <p:ExtendedButton Text="Зарегистрироваться"	
-			 		Style = "{StaticResource RegistrationButtonStyle}"				 		
-				 	WidthRequest = "180"
+			 		Style = "{StaticResource RegistrationButtonStyle}"				 	
 				 	HeightRequest = "40"
 				 	/>
 	</StackLayout>  

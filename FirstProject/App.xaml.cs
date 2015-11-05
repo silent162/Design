@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
+using FirstProject.Views;
 
 namespace FirstProject
 {

@@ -3,13 +3,13 @@ using Xamarin.Forms;
 
 namespace FirstProject
 {
-	public class ExtendedBoxView : BoxView
-	{
-		public ExtendedBoxView ()
-		{
+    public class ExtendedBoxView : BoxView
+    {
+        public ExtendedBoxView()
+        {
 			
-		}
-	}
+        }
+    }
 }
 
 

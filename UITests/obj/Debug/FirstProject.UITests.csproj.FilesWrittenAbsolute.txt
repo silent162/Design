@@ -1,0 +1,14 @@
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/bin/Debug/FirstProject.UITests.dll.mdb
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/bin/Debug/FirstProject.UITests.dll
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/obj/Debug/FirstProject.UITests.dll
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/obj/Debug/FirstProject.UITests.dll.mdb
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/bin/Debug/nunit.framework.dll
+/Users/worker/Desktop/Desktop/FirstPR/Design/UITests/bin/Debug/Xamarin.UITest.dll
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/bin/Debug/FirstProject.UITests.dll.mdb
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/bin/Debug/FirstProject.UITests.dll
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/obj/Debug/FirstProject.UITests.dll
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/obj/Debug/FirstProject.UITests.dll.mdb
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/bin/Debug/nunit.framework.dll
+/Users/worker/Desktop/Desktop4/FirstPR/Design/UITests/bin/Debug/Xamarin.UITest.dll

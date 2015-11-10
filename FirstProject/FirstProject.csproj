@@ -55,7 +55,6 @@
     </Compile>
     <Compile Include="Controls\ExtendedPicker.cs" />
     <Compile Include="Controls\ExtendedBoxView.cs" />
-    <Compile Include="Controls\ExtendedFrame.cs" />
     <Compile Include="ViewModels\AuthorizationPageViewModel.cs" />
     <Compile Include="ViewModels\RegistrationPageViewModel.cs" />
     <Compile Include="ViewModels\MainMenuViewModel.cs" />
@@ -64,6 +63,8 @@
     <Compile Include="Controls\ExtendedButtonMainMenu.cs" />
     <Compile Include="Controls\ExtendedButtonAddDevice.cs" />
     <Compile Include="Controls\ExtendedButtonCircleBackGr.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Controls\ExtendedPiK.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.5.1.6471\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

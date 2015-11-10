@@ -3,14 +3,14 @@ using Xamarin.Forms;
 
 namespace FirstProject
 {
-	public class ExtendedPicker : Picker
-	{
-		public ExtendedPicker ()
-		{
+    public class ExtendedPicker : Picker
+    {
+        public ExtendedPicker()
+        {
 			
-		}
+        }
 
-	}
+    }
 }
 
 

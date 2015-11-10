@@ -37,7 +37,7 @@ namespace FirstProject.Droid
 				return;
 
 			Control.SetBackgroundColor (Android.Graphics.Color.Transparent);
-			Control.TextSize = 15;
+			Control.TextSize = Constants.ENTRY_FONT_SIZE;
 			Control.SetPaddingRelative (0, 30, 0, 30);
 		}
 

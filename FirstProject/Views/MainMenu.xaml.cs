@@ -6,12 +6,13 @@ using System.Collections.ObjectModel;
 
 namespace FirstProject.Views
 {
-	public partial class MainMenu : ContentPage
-	{
-		public MainMenu ()
-		{  		
-			InitializeComponent ();
-		}
-	}
+    public partial class MainMenu : ContentPage
+    {
+        public MainMenu()
+        {  		
+            InitializeComponent();
+
+        }
+    }
 }
 
